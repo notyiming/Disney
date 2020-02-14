@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en-IE">
+	<head>
+		<title>Disney Game</title>
+		<meta charset="utf-8">
+		<link rel="stylesheet" type="text/css" href="style.css">
+		<link rel="icon" href="images/icon.ico"><!--https://www.iconspedia.com/icon/mickey-mouse-icon-25167.html-->
+	</head>
+	<body>
+		<header>
+			<h1><img src="images/logo.png" alt="logo" width="100"><!--https://www.owiber.com/2014/11/10/disney/--> SOFT6007 Disney Game</h1>
+		</header>
+		<main>
+			<section id="left">
+				<div class="dropdown">
+					<div class="dropdown-button">
+						<a href="#">Other Disney Sites</a>
+					</div>
+					<ul>
+						<li><a href="https://www.disney.com/" target="_blank">-Disney Main Page-</a></li>
+						<li><a href="https://disneyparks.disney.go.com/" target="_blank">-Disney Parks-</a></li>
+						<li><a href="https://www.shopdisney.com/" target="_blank">-Disney Shop-</a></li>
+					</ul>
+				</div>
+				<div id="rate">
+					<h2>How much do you like Disney?<br></h2>
+					<h4>Hate it-------------------Neutral------------------Love it</h4>
+					<input id="slider" onchange="slide()" type="range" min="0" max="10" step="1">
+					<p class = "rateScore">Rating: <span id="rating"></span></p>
+				</div>
+				<img src="images/mickey1.png" onmouseover="this.src = 'images/mickey2.png'" onmouseout="this.src = 'images/mickey1.png'" height="390" alt="mickey mouse"><br>
+				<h3>Hover over me!</h3>   
+			</section>  
+
+			<section id="input"> 
+				<h1>Pick a Disney character out of these four below:</h1>
+				<h2>Elsa / Ariel / Mulan / Jasmine</h2>
+				<label>Enter Your Character: </label><input type="text" id="name"><br>
+				<button onclick="selectCharacter()">Select</button><br>
+				<p>The character you selected was: <span id = "selectedName"></span></p>
+				<h2>Try My Luck!</h2>
+				<p>This website will randomly choose a Disney character and display the details below,<br>if the character you've chosen is the same as the website's, you win the game!</p>
+				<button onclick="getCharacter()">Try My Luck</button><br>
+				<span id="ifWin"></span>
+				<br>
+				<img src="images/castle.png" alt="castle" width="480">
+			</section><!--https://www.pinterest.ie/pin/395964992228334986/?autologin=true-->   
+
+			<fieldset>
+				<section id = "details">
+					<h2>Character Name: <span id="getName"></span></h2>
+					<h3>Movie: <span id="movie"></span></h3>
+					<h3>Best friend: <span id="getFriend"></span></h3>
+					<h3>Main Nemesis: <span id="getNemesis"></span></h3>
+					<h3>Song from Movie: <span id="getSong"></span></h3>
+					<h3>Lyrics from Song:<br><span id="getLyrics"></span></h3>
+				</section>
+				<section id="char-img">
+					<h1>Character Image</h1>
+					<img id="image" width="200">
+				</section>
+			</fieldset>
+			</div>    
+		</main>
+		<footer>
+			<p>&copy; Yi Ming Tan 2019</p>
+			<p><a href="mailto:y.tan@mycit.ie">..Email Us: y.tan@mycit.ie</a></p>
+			<p><a href="tel:0838888888">..Call Us: 0838888888</a></p>
+			<script src="disney.js"></script>
+			<!--All copyrights reserved for Disney-->
+		</footer>
+	</body>
+</html>

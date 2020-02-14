@@ -1,0 +1,181 @@
+@import url('https://fonts.googleapis.com/css?family=Baskervville&display=swap');
+
+html{
+	background-color:#87c7db;
+	font-family: 'Baskervville', serif;
+}
+
+main{
+	width: 85%;
+	margin: auto;
+}
+
+header{
+	margin:0 auto;
+	text-align: center;
+	background-color: #2c6187;
+	color: white;
+	padding: 0.7em;
+	font-size: 1.2em;
+	border-bottom: #0a324f ridge;
+	border-width: 10px;
+}
+
+.dropdown{
+	margin: auto;
+	text-align: center;
+	margin-top: 60px;
+	margin-bottom: 70px;
+	width: 300px;
+	font-size: 120%;
+}
+.dropdown-button{
+	padding: 15px;
+	background-color: white;
+}
+.dropdown-button a{
+	color: #0a324f;
+	text-decoration: none;
+	font-weight: bold;
+}
+.dropdown ul{
+	list-style-type: none;
+	margin: 0;
+    padding: 0;
+}
+.dropdown li{
+	text-align: center;
+	width: 290px;
+	padding: 10px 5px;
+	background-color: white;
+	border-bottom: #0a324f ridge;
+	border-width: 5px;
+	visibility: hidden;
+	opacity: 0;
+}
+.dropdown a{
+	text-decoration: none;
+	color: #151f2d;
+}
+.dropdown li a{
+	transition: 0.5s;
+}
+.dropdown li a:hover{
+	color: white;
+	background-color: #309ca8;
+	padding: 10px;
+	border-radius: 2em;
+}
+.dropdown:hover li{
+	animation: load 1s forwards;
+	background-color: #87c7db;
+	visibility: visible;
+}
+@keyframes load{
+	100%{
+		opacity: 1;
+	}
+}
+
+#slider{
+	width: 60%;
+	margin-bottom: 0px;
+}
+#rate h2, h4{
+    color: #151f2d;
+}
+#rate{
+	margin-top: 6em;
+}
+.rateScore{
+	font-size: 120%;
+	font-weight: bold;
+	margin-bottom: 4.5em; 
+}
+#rating{
+	font-size: 150%;
+	font-weight: bold;	
+}
+
+#left{
+	text-align: center;
+	width: 50%;
+	float: left;
+}
+
+#input{
+	width: 50%;
+	float: left;
+	text-align: center;
+	margin-top: 60px;
+	font-size: 120%;
+}
+
+fieldset{
+	background-color: #2b6c77;
+	color: white;
+	margin-bottom: 10em;
+	padding:1em;
+	border:none;
+}
+
+fieldset #details{
+	width: 50%;
+	float: left;
+}
+
+fieldset #char-img{
+	width: 50%;
+	float: left;
+	text-align: center;
+}
+
+footer{
+	border-top: #0a324f ridge;
+	border-width: 10px;
+	margin-top: 3em;
+	background-color: #2c6187;
+	padding: 1.5em; 
+}
+footer a, footer p{
+	padding-left: 2em;
+	color:white;
+	text-decoration: none;
+}
+
+button{
+	border:none;
+	border-radius: 3em;
+	padding: 15px;
+	background-color: #2c6187;
+	color: white;
+	cursor: pointer;
+	font-size: 100%;
+	transition: 0.5s;
+	margin-top: 0.5em;
+}
+
+button:hover{
+	background-color: white;
+	color: #2c6187;
+}
+
+#name:focus{
+	background-color: #f5f7b4;
+}
+
+#selectedName{
+	font-weight: bold;
+}
+
+#image{
+	padding:1em;
+}
+
+#ifWin {
+	font-size: 150%;
+}
+
+
+
+
