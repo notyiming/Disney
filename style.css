@@ -1,5 +1,10 @@
 @import url('https://fonts.googleapis.com/css?family=Baskervville&display=swap');
 
+*{
+	margin: 0;
+	padding:0;
+}
+
 html{
 	background-color:#87c7db;
 	font-family: 'Baskervville', serif;
